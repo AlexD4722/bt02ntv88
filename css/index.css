@@ -140,10 +140,10 @@ a {
     flex-wrap: wrap;
     list-style: none;
 }
-
-.button {
+.button{
     padding: 10px 30px;
     border: none;
+    cursor: pointer;
 }
 
 .btn-tool {
@@ -266,7 +266,6 @@ a {
 
 .button--play {
     font-size: 37px;
-    color: white;
 }
 
 .bi-play-fill::before {
@@ -274,8 +273,23 @@ a {
     background-color: white;
     padding: 5px;
     color: var(--color--blule);
+    cursor: pointer;
+  
 }
-
+.bi-play-fill:hover {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
+}
+.button--book:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button--work:hover{
+    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.button:hover{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 .button--book {
     border: none;
     border-radius: 5px;
@@ -459,7 +473,7 @@ a {
 }
 
 .cart-shadow:hover {
-    box-shadow: 0px 0px 10px 0px;
+    box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
 }
 
 .img-detail {
@@ -623,6 +637,7 @@ a {
     border-radius: 50%;
     border: 1px solid #E7E5EA;
     background-color: white;
+    cursor: pointer;
 }
 
 .link-btn-transfer__chevron:hover {
@@ -738,15 +753,24 @@ a {
     color: #FFFFFF;
     border-radius: 10px;
 }
-
-.btn-toggle::after {
+.btn-toggle__left{
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color--green);
+    transform: translateX(0%);
+    transition: 0.5s;
+}
+/* .btn-toggle::after {
     content: "";
     display: block;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     background-color: var(--color--green);
-}
+} */
 
 .title-top-girt {
     font-family: 'Outfit';
